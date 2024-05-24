@@ -8,6 +8,7 @@ data = pd.read_csv('FUNOlympics2023.csv')
 
 # Initialize the Dash app
 app = Dash(__name__, suppress_callback_exceptions=True, external_stylesheets=[dbc.themes.BOOTSTRAP])
+server = app.server
 
 # Define the layout
 app.layout = html.Div([
